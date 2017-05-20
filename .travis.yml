@@ -8,3 +8,11 @@ cache:
 language: node_js
 node_js:
   - "6.9.1"
+deploy:
+    provider: script
+    script: "./build.other.repo.sh"
+    skip_cleanup: true    
+    on:
+      branch: master
+      condition: $TRAVIS_TEST_RESULT = 0 && $TRAVIS_PULL_REQUEST = "false"
+
