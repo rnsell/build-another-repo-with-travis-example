@@ -1,0 +1,22 @@
+{
+  "name": "build-another-repo-with-travis-example",
+  "version": "1.0.0",
+  "description": "The repo has a simple test directory to demonstrate building another repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnsell/build-another-repo-with-travis-example.git"
+  },
+  "author": "Robert Sell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rnsell/build-another-repo-with-travis-example/issues"
+  },
+  "homepage": "https://github.com/rnsell/build-another-repo-with-travis-example#readme",
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  }
+}
